@@ -45,8 +45,8 @@ securityContext: {}
 
 service:
   type: NodePort
-  port: 80
-  targetPort: 8080
+  port: 8089
+  targetPort: http
 
 ingress:
   enabled: true
@@ -62,7 +62,7 @@ ingress:
       - path: /
         pathType: Prefix
         backend:
-          serviceName: apigateway
+          serviceName: test
           servicePort: 80
   tls:
     - secretName: tls-secret
