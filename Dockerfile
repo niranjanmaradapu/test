@@ -1,4 +1,4 @@
 FROM java:8
+ADD mv target/*.jar   target/test-demo.jar
 EXPOSE 8080
-ADD target/test-demo.jar test-demo.jar
 ENTRYPOINT ["java","-jar" , "test-demo.jar"]
