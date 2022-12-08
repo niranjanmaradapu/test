@@ -45,8 +45,8 @@ securityContext: {}
 
 service:
   type: NodePort
-  port: 8089
-  targetPort: http
+  port: 8080
+  targetPort: 8089
 
 ingress:
   enabled: true
