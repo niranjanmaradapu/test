@@ -52,7 +52,7 @@ ingress:
   enabled: true
   className: alb
   annotations:
-    kubernetes.io/ingress.class: alb
+    #kubernetes.io/ingress.class: alb
     alb.ingress.kubernetes.io/target-type: ip
     alb.ingress.kubernetes.io/scheme: internet-facing    
    
