@@ -1,4 +1,5 @@
 FROM openjdk:8
-ADD target/test-demo.jar test-demo.jar
+COPY  target/  target/
+#RUN  mv target/*.jar   target/test-demo.jar
 EXPOSE 8080
-ENTRYPOINT ["java","-jar" , "test-demo.jar"]
+ENTRYPOINT ["java","-jar" , "target/test-demo.jar"]
