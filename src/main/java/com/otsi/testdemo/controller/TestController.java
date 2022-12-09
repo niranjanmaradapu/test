@@ -31,7 +31,7 @@ public class TestController {
 	@GetMapping("test-user")
 	public ResponseEntity<?> testingDocker(@RequestParam(name = "user", required = false) String user) {
 		if (StringUtils.isEmpty(user)) {
-			throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "user value is empty");
+			throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "user input is empty");
 		}
 		if (user.equalsIgnoreCase("test-user")) {
 			TestVO test = new TestVO();
