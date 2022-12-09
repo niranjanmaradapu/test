@@ -49,7 +49,7 @@ service:
   targetPort: http
 
 ingress:
-  enabled: true
+  enabled: false
   className: alb
   annotations:
     #kubernetes.io/ingress.class: alb
